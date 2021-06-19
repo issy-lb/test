@@ -2,7 +2,12 @@
   "name": "Profy.link",
   "short_name": "Profy.link",
   "background_color": "#fc980c",
-  "icons": [{
+  "icons": [
+    {
+      "src": "https://profy-59433.web.app/assets/lp/apple-touch-icon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },{
       "src": "https://profy-59433.web.app/assets/lp/apple-touch-icon.png",
       "sizes": "192x192",
       "type": "image/png"
