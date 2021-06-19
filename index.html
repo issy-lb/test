@@ -1,25 +1,31 @@
-<!-- 2021/06/14- ver0.0.3 -->
-<!DOCTYPE html>
-<html lang="ja">
-
+<!-- index.html -->
+<html>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet" />
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="https://profy-59433.web.app/assets/lp/profy.favicon1.ico" />
-    <!-- webclip -->
-    <link rel="apple-touch-icon" size="152x152" href="https://profy-59433.web.app/assets/lp/apple-touch-icon.png" />
+  <!-- manifest.jsonを呼び出しています -->
+  <link rel="manifest" href="./manifest.json">
+  <script>
+    // service workerが有効なら、service-worker.js を登録します
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js').then(function() { console.log('Service Worker Registered'); });
+   }
+  </script>
+  <title>Hello PWA.</title>
+  <style>
+    body {
+      text-align:center;
+      font-size: 40px;
+      vertical-align: middle;
+    }
+    .image {
+      width: 80%; 
+      margin: auto;
+      display: block;
+    }
+  </style>
 </head>
-
 <body>
-    <div id="root">テストアプリ変更2</div>
+  <h1>Hello PWA.</h1>
+  <img src="./pwa-logo.svg" alt="PWA logo" class="image" />
+  <a href="p.html">p.html</a>
 </body>
-
 </html>
